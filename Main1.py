@@ -35,3 +35,38 @@ print(x)
 print(y)
 print(z)
 #Si può assegnare lo stesso valore a diverse variabili
+x=y=z= "Giordy"
+print(x)
+print(y)
+print(z)
+#Avendo dei valori in una lista si possono estrarre da essa e assegnargli delle varibili
+nomi_meravigliosi=["Asdrubale","Giangiovanni","Gennaro"]
+x, y, z = nomi_meravigliosi
+print(x)
+print(y)
+print(z)
+#La funzione print serve per stampare le variabili
+x = "Ho mal di pancia"
+print(x)
+#Si possono stampare diverse variabili separate da una virgola
+x = "Io"
+y = "ho"
+z = "sonno"
+print(x, y, z)
+#Si può anche utilizzare il simbolo + per stampare diverse variabili
+x = "Io "
+y = "ho "
+z = "sonno"
+print(x+y+z)
+#Con le variabili int + funziona come un operatore matematico
+x = 4
+y = 5
+print(x+y)
+#Se provi a sommare una stringa a una variabile int il programma da errore
+x = 6
+y = "Piero"
+print(x + y)
+#Il modo migliore per stampare una stringa e una vbariabile int insieme è dividerli con una virgola
+x = 6
+y = "Piero"
+print(x, y)
