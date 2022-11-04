@@ -29,3 +29,9 @@ _my_var = " Pingu"
 myVar = "Pingu"
 MYVAR = "Pingu"
 myvar2 = "Pingu"
+#Si può assegnare più valori a diverse variabili nella stessa linea
+x, y, z=  "Piero","Ugo","Dario"
+print(x)
+print(y)
+print(z)
+#Si può assegnare lo stesso valore a diverse variabili
