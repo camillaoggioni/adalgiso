@@ -65,8 +65,34 @@ print(x+y)
 #Se provi a sommare una stringa a una variabile int il programma da errore
 x = 6
 y = "Piero"
-print(x + y)
+print(x+y)
 #Il modo migliore per stampare una stringa e una vbariabile int insieme è dividerli con una virgola
 x = 6
 y = "Piero"
 print(x, y)
+#Si crea una variabile fuori dalla funzione e la usi all'interno della stessa
+x = "meraviglioso"
+def myfunc():
+  print("Io sono" + x)
+myfunc()
+#Crea variabili all'interno della funzione con lo stesso nome della variabile global
+x = "bellissimo"
+def myfunc():
+  x = "mirabolante"
+  print("Python è " + x)
+myfunc()
+print("Python è " + x)
+#Global permette di stampare la variabile definita nella funzione anche all'esterno di essa
+def myfunc():
+  global x
+  x = "stratosferico"
+myfunc()
+print("Python è " + x)
+#Per cambiare il valore di una variabile globalall'interno della funzione bisogna definirla col termine global
+x = "super"
+def myfunc():
+  global x
+  x = "iper"
+myfunc()
+print("Python è " + x)
+
