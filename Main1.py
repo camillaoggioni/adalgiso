@@ -188,9 +188,22 @@ for x in thislist:
   thislist = ["apple", "banana", "cherry"]
 for i in range(len(thislist)):
   print(thislist[i])
-#
+#Utilizza il ciclo while per scorrere i numeri dell'indice
 thislist = ["apple", "banana", "cherry"]
 i = 0
 while i < len(thislist):
   print(thislist[i])
   i = i + 1
+#For è il modo migliore per scorrere tutti gli elementi della lista
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+#
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
