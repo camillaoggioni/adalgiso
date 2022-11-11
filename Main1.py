@@ -88,11 +88,109 @@ def myfunc():
   x = "stratosferico"
 myfunc()
 print("Python è " + x)
-#Per cambiare il valore di una variabile globalall'interno della funzione bisogna definirla col termine global
+#Per cambiare il valore di una variabile global all'interno della funzione bisogna definirla col termine global
 x = "super"
 def myfunc():
   global x
   x = "iper"
 myfunc()
 print("Python è " + x)
-
+#Si crea una lista
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+#Si può ripetere uno stesso valore
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+#Si può stampare un valore indicando il numero che ha nella lista
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+#Si usa il numero negativo per partire dalla fine della lista
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+#Si può definire un intervallo di variabili da stampare
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+#Si stampano le variabilio che precedonbo quella in posizione 4 esclusa
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])
+#Si stampano le variabili che seguono quella in posizione 2 esclusa
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:])
+#Definisce un intervallo partendo dalla fine
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+#Verifica se una variabile è presente nella lista e stampa una stringa che verifica la presenza
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+#Cambia il valore di una variabile nella posizione indicata
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+#Cambia il valore di più variabili nelle posizioni indicate
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+#Si sostituisce a una variabile due variabili
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+#Si cambiano due variabili in una sola variabile
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist)
+#Permette di aggiungere altre variabili nella posizione scelta senza sostituirne
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+#Permette di aggiungere unba variabile alla lista
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+#Si possono unire due liste
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+#Si può unire a una lista anche un altro oggetto
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+#Permette di rimuovere una variabile dalla lista
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+#Rimuove il secondo elemento della lista
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+#Rimuove l'ultimo elemento
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+#Rimuove il primo elemento della lista
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+#Riumove l'intera lista
+thislist = ["apple", "banana", "cherry"]
+del thislist
+#Rimuove tutti gli elementi dalla lista
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+#Stampa gli elementi uno per uno
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+#Stampa facendo riferimento al numero di indice degli elementi
+  thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+#
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
